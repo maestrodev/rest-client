@@ -8,5 +8,4 @@ rescue LoadError
   # NOP, ignore
 end
 
-require 'webmock/rspec'
 require 'restclient'
