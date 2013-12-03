@@ -228,7 +228,14 @@ module RestClient
       log_request
 
       net.start do |http|
-        req.body_stream = payload.stream if payload
+        if payload
+          if payload.is_a?(RestClient::Payload::Streamed)
+            req.body_streamed = payload
+          else
+            req.body = payload  # or payload.to_s if we want to keep it equiv to current
+          end
+        end
+
         if @block_response
           http.request(req, & @block_response)
         else
