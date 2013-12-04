@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'rest-client-maestro'
-  s.version = '1.7.1.maestro'
+  s.version = '1.7.2.maestro'
   s.authors = ['REST Client Team']
   s.description = 'A simple HTTP and REST client for Ruby, inspired by the Sinatra microframework style of specifying actions: get, put, post, delete.'
   s.license = 'MIT'
