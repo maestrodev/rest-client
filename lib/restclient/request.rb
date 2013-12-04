@@ -183,7 +183,7 @@ module RestClient
       net.start do |http|
         if payload
           if payload.is_a?(RestClient::Payload::Streamed)
-            req.body_streamed = payload
+            req.body_stream = payload
           else
             req.body = payload  # or payload.to_s if we want to keep it equiv to current
           end
