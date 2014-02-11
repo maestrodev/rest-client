@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'rest-client-maestro'
-  s.version = '1.7.2.maestro'
+  s.version = '1.7.3.maestro'
   s.authors = ['REST Client Team']
   s.description = 'A simple HTTP and REST client for Ruby, inspired by the Sinatra microframework style of specifying actions: get, put, post, delete.'
   s.license = 'MIT'
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/maestrodev/rest-client'
   s.summary = 'Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions.'
 
-  s.add_runtime_dependency(%q<mime-types>, [">= 1.16", "< 2.0"])
+  s.add_runtime_dependency(%q<mime-types>, [">= 1.16"])
   s.add_development_dependency(%q<webmock>, ["~> 1.4"])
   s.add_development_dependency(%q<rspec>, ["~> 2.4"])
   s.add_dependency(%q<netrc>, ["~> 0.7.7"])
