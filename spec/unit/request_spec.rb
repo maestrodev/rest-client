@@ -712,7 +712,6 @@ describe RestClient::Request do
     response = @request.transmit(@uri, net_http_post_request, payload)
     response.should_not be_nil
     response.code.should eq 204
-<<<<<<< HEAD:spec/unit/request_spec.rb
   end
 
   describe "raw response" do
@@ -729,7 +728,5 @@ describe RestClient::Request do
       net_http_res.stub(:read_body).and_return("body")
       @request.fetch_body(net_http_res)
     end
-=======
->>>>>>> convert == to eq to avoid warnings, (all were done for concistency):spec/request_spec.rb
   end
 end
