@@ -232,7 +232,7 @@ module RestClient
           if payload.is_a?(RestClient::Payload::Streamed)
             req.body_stream = payload
           else
-            req.body = payload  # or payload.to_s if we want to keep it equiv to current
+            req.body = payload.to_s
           end
         end
 
